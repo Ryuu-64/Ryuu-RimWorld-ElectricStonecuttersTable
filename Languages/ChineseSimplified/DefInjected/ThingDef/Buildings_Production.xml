@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LanguageData>
+    <ElectricStonecuttersTable.label>切石桌（电力）</ElectricStonecuttersTable.label>
+    <ElectricStonecuttersTable.description>一个配备有切石工具的工作台。用于把不规则的岩石切割成可用的石块。在没电时的工作速度只有平时的50%。</ElectricStonecuttersTable.description>
+</LanguageData>
