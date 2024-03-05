@@ -6,8 +6,15 @@
     <supportedVersions>
         <li>1.4</li>
     </supportedVersions>
-    <description>Electric Stonecutter's Table</description>
+    <description>This mod only contains an electric stonecutter's table. The efficiency of an electric stonecutter's table is 200% that of a stonecutter's table. But like the electric production buildings in RimWorld, construction requires components and can breakdown.
+
+Please feel free to speak up if you have any suggestions or comments.
+
+Compatibility:
+Compatible with Stonecutting Extended (https://steamcommunity.com/sharedfiles/filedetails/?id=2571676542)
+
+source project link: https://github.com/Ryuu-64/Ryuu-RimWorld-ElectricStonecuttersTable
+
+Contributors:
+scott2521(76561198073525178): Provides compatibility methods with other mods.</description>
 </ModMetaData>
-
-
-

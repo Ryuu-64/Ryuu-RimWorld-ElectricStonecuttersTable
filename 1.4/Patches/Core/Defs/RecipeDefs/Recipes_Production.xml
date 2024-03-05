@@ -1,10 +1,35 @@
 <?xml version="1.0" encoding="utf-8"?>
 
 <Patch>
-    <Operation Class="PatchOperationAdd">
-        <xpath>Defs/RecipeDef[@Name="MakeStoneBlocksBase"]/recipeUsers</xpath>
-        <value>
-            <li>ElectricStonecuttersTable</li>
-        </value>
+    <!--
+        Add the recipe for the electric stone cutter's table and ensure compatibility with other mods.
+    -->
+    <Operation Class="PatchOperationConditional">
+        <xpath>
+            Defs/RecipeDef/recipeUsers[li[text()='TableStonecutter'] and
+            not(li[text()='ElectricStonecuttersTable'])]
+        </xpath>
+        <match Class="PatchOperationAdd">
+            <xpath>
+                Defs/RecipeDef/recipeUsers[li[text()='TableStonecutter'] and
+                not(li[text()='ElectricStonecuttersTable'])]
+            </xpath>
+            <value>
+                <li>ElectricStonecuttersTable</li>
+            </value>
+        </match>
+    </Operation>
+
+    <!--
+        Ensure compatibility with other mods
+    -->
+    <Operation Class="PatchOperationConditional">
+        <xpath>Defs/ThingDef/recipeMaker/recipeUsers[@li="TableStonecutter"]</xpath>
+        <match Class="PatchOperationAdd">
+            <xpath>Defs/ThingDef/recipeMaker/recipeUsers[@li="TableStonecutter"]</xpath>
+            <value>
+                <li>ElectricStonecuttersTable</li>
+            </value>
+        </match>
     </Operation>
 </Patch>
